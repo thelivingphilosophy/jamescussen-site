@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InVoice - Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+        h1 { color: #1e4360; }
+        h2 { color: #1e4360; margin-top: 2em; }
+        .updated { color: #64748b; font-style: italic; }
+        ul { padding-left: 1.5em; }
+        li { margin-bottom: 0.5em; }
+    </style>
+</head>
+<body>
+    <h1>InVoice - Privacy Policy</h1>
+    <p class="updated">Last updated: February 2026</p>
+
+    <h2>Overview</h2>
+    <p>InVoice is a mobile application designed for tradesmen to create invoices from voice recordings and track job and expense data. This privacy policy explains how InVoice collects, uses, and protects your information.</p>
+
+    <h2>Information We Collect</h2>
+    <p>InVoice collects and processes the following types of information:</p>
+    <ul>
+        <li><strong>Voice recordings:</strong> Audio captured during job documentation, used solely for transcription into text. Recordings are processed via OpenAI's transcription API and are not stored on our servers.</li>
+        <li><strong>Job data:</strong> Customer names, job descriptions, costs, and materials entered or transcribed during use of the app.</li>
+        <li><strong>Expense data:</strong> Receipt images, vendor names, amounts, and categories captured through the expense tracking feature. Receipt images are processed via Google's Gemini API for text extraction.</li>
+        <li><strong>Google account information:</strong> Your name, email address, and profile picture, obtained through Google Sign-In to identify your account.</li>
+    </ul>
+
+    <h2>How We Use Google API Data</h2>
+    <p>InVoice accesses Google services on your behalf using OAuth 2.0 authentication. The app requests the following permissions:</p>
+    <ul>
+        <li><strong>Google Drive (drive.file scope):</strong> Used to create and upload invoice PDFs and expense receipt images to a dedicated "InVoice" folder in your Google Drive. The app can only access files it creates — it cannot read or modify your other Drive files.</li>
+        <li><strong>Google Sheets (spreadsheets scope):</strong> Used to create and maintain two spreadsheets in your Google Drive: "Job Tracking" (logging completed jobs) and "Expense Tracking" (logging business expenses). The app creates these spreadsheets and appends data rows as you complete jobs and capture expenses.</li>
+    </ul>
+    <p>InVoice's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Data Storage</h2>
+    <ul>
+        <li><strong>On your device:</strong> Job data, settings, and API keys are stored locally on your device using encrypted storage (AsyncStorage and SecureStore). This data remains on your device and is not transmitted to our servers.</li>
+        <li><strong>In your Google Drive:</strong> Invoice PDFs, receipt images, and spreadsheet data are stored in your own Google Drive account under the "InVoice" folder. You retain full ownership and control of this data.</li>
+        <li><strong>Third-party processing:</strong> Voice recordings are sent to OpenAI for transcription. Receipt images are sent to Google Gemini for text extraction. These services process data according to their own privacy policies. No data is retained by InVoice after processing.</li>
+    </ul>
+
+    <h2>Data We Do Not Collect</h2>
+    <ul>
+        <li>We do not collect analytics or usage tracking data.</li>
+        <li>We do not sell, share, or transfer your personal data to third parties for advertising or marketing purposes.</li>
+        <li>We do not store your Google credentials. Authentication is handled entirely through Google's OAuth 2.0 system.</li>
+        <li>We do not maintain any server-side database of your personal information.</li>
+    </ul>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>All data created by InVoice is stored either on your device or in your Google Drive account. You can:</p>
+    <ul>
+        <li>Delete any files from your Google Drive at any time.</li>
+        <li>Revoke InVoice's access to your Google account through your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+        <li>Uninstall the app to remove all locally stored data from your device.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>InVoice uses industry-standard security practices including:</p>
+    <ul>
+        <li>OAuth 2.0 for Google authentication (no passwords stored).</li>
+        <li>HTTPS for all network communications.</li>
+        <li>API keys stored in device-level secure storage.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>InVoice is not intended for use by children under the age of 16. We do not knowingly collect personal information from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or your data, please contact:</p>
+    <p>James Cussen<br>
+    Email: <a href="mailto:info@jamescussen.com">info@jamescussen.com</a></p>
+</body>
+</html>
